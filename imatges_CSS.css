@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #004d00;
+    color: white;
+}
+
+/* Estil per les imatges */
+#blocImatges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+#blocImatges img {
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.tops {
+    position: relative;
+}
+
+.tops-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.tops-content a {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.tops-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.tops:hover .tops-content {
+    display: block;
+}
+
+section #titols{
+    color: red;
+}
+
+img {
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.big {
+    transform: scale(1.1);
+}
